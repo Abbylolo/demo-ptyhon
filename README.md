@@ -75,7 +75,7 @@ python3 --version 或 python3 -V
 
 ##### 什么是虚拟环境？
 
-虚拟环境是一个独立的 Python 运行环境，它可以：
+虚拟环境是一个 **独立隔离** 的 Python 运行环境，它可以：
 
 - **隔离项目依赖**：不同项目使用不同版本的包，互不冲突
 - **避免污染系统 Python**：不会在系统 Python 中安装大量第三方库
@@ -114,6 +114,10 @@ deactivate
 pip install -r requirements.txt
 ```
 
+**PyCharm添加现有解释器**
+
+![image-20260521225106061](assets/image-20260521225106061.png)
+
 ---
 
 ##### 方式二：使用 Conda（适合数据科学）
@@ -150,4 +154,15 @@ conda env create -f environment.yml
 # 9. 删除环境
 conda remove -n myenv --all
 ```
+
+
+
+## 二、基本使用
+
+### 1、命令
+
+| 命令             | 含义       | 备注                       |
+| ---------------- | ---------- | -------------------------- |
+| pip freeze       | 查看安装包 |                            |
+| pip install 包名 | 安装包     | 或者py文件import后直接安装 |
 
