@@ -5,7 +5,7 @@ age = 45
 salary = 1.4567
 
 print('大家好，我是杰伦，我今年45，我的年薪1.4567亿')
-
+print(f'大家好，我是{name}，我今年{age}，我的年薪{salary}亿') # 推荐
 
 
 # 占位符：（建议掌握）
@@ -13,13 +13,13 @@ print('大家好，我是杰伦，我今年45，我的年薪1.4567亿')
 #   %d : 整数
 #   %f : 小数   %.4f表示保留4位小数，四舍五入
 #   %% : 百分号
-
-
-
+print('大家好，我是%s，我今年%d，我的年薪%.4f亿' % (name, age, salary))
+print('大家好，我是%s，我今年45，我的年薪1.4567亿' % name)
 
 
 # 花括号占位符.format() （了解）
-
+print('大家好，我是{}，我今年{}，我的年薪{}亿'.format(name, age, salary))
+print('大家好，我是{a}，我今年{b}，我的年薪{c}亿'.format(a=name, b=age, c=salary))
 
 
 # 练习：
@@ -33,6 +33,9 @@ name = input("姓名:")
 age = int(input("年龄:"))
 height = float(input('身高：'))
 weight = float(input('体重：'))
+print(f'大家好，我是{name}，今年{age}岁，我身高是{height:.1f}cm，体重是{weight:.1f}kg')
+print('大家好，我是%s, 今年%d岁，我身高是%.1fcm，体重是%.1fkg' % (name, age, height, weight))
+print('大家好，我是{}, 今年{}岁，我身高是{:.1f}cm，体重是{:.1f}kg'.format(name, age, height, weight))
 
 
 
