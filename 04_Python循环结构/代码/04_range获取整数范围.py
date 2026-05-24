@@ -6,6 +6,13 @@
 
 
 
+print(range(5)) # 等价于 range(0, 5)
+print(list(range(5))) # [0, 1, 2, 3, 4]
+print(list(range(0, 5))) # [0, 1, 2, 3, 4]
+print(list(range(2, 5))) # [2, 3, 4]
+print(list(range(9, 5))) # []
+print(list(range(2, 9, 2))) # [2, 4, 6, 8]
+print(list(range(6, 1, -1))) # [6, 5, 4, 3, 2]
 
 
 

@@ -8,7 +8,10 @@
 *****
 *****
 '''
-
+for i in range(6):
+    for j in range(5):
+        print('*', end='')
+    print()
 
 
 
@@ -21,7 +24,10 @@
 *****
 ******
 '''
-
+for i in range(6):
+    for j in range(i + 1):
+        print('*', end='')
+    print()
 
 
 
@@ -34,6 +40,10 @@
 12345
 123456
 '''
+for i in range(6):
+    for j in range(i + 1):
+        print(j + 1, end='')
+    print()
 
 
 
@@ -51,7 +61,10 @@
 '''
 # \n : 换行符
 # \t : 制表符 tab
-
+for i in range(1, 10):
+    for j in range(1, i+1):
+        print(f'{j}*{i}={i*j}', end='\t')
+    print()
 
 
 
@@ -65,6 +78,11 @@
  *********    5     1           9
 ***********   6     0           11
 '''
-
+for i in range(1, 7):
+    for p in range(6 - i):
+        print(' ', end='')
+    for j in range(2*i-1):
+        print('*', end='')
+    print()
 
 

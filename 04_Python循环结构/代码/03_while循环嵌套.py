@@ -6,7 +6,14 @@
 *****
 *****
 '''
-
+i = 1
+while i <= 3:
+    j = 1
+    while j <= 5:
+        print('*', end='')
+        j += 1
+    i += 1
+    print()
 
 
 # 打印下面图形，要求一次只能打印一个"*"
@@ -17,7 +24,14 @@
 ****
 *****
 '''
-
+i = 1
+while i <= 5:
+    j = 1
+    while j <= i:
+        print('*', end='')
+        j += 1
+    i += 1
+    print('')
 
 
 
@@ -30,7 +44,19 @@
  *******     4     1           7
 *********    5     0           9
 '''
-
+i = 1
+while i <= 5:
+    j = 1
+    while j <= 9:
+        if j <= 5 - i:
+            print(' ', end='')
+        elif j >= 5 + i:
+            print(' ', end='')
+        else:
+            print('*', end='')
+        j += 1
+    i += 1
+    print('')
 
 
 

@@ -39,6 +39,7 @@ print(a, type(a))
 
 # tuple： 元组，不可变的列表
 a = (1, 2, 3)
+# a[0] = 100  # ❌ TypeError: 'tuple' object does not support item assignment
 print(a, type(a))
 
 # dict: 字典，dictionary
