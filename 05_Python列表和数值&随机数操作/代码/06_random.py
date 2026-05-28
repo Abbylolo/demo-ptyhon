@@ -7,10 +7,33 @@
 import random
 
 # random.choice(): 从列表/str中随机取一个元素
+girl_friends = ['刘亦菲', '的时代', '得到的', '饿饿的']
+print(random.choice(girl_friends))
+print(random.choice("abc"))
+print(random.choice(range(1, 7)))
+
 # random.randint(a, b): 从一个范围随机取一个整数，闭区间
-# random.randrange(a, b, step): 随机获取一个奇数，和range类似
+print(random.randint(3, 5)) # [3, 5] 之间取随机值 ！！闭区间
+
+# random.randrange(a, b, step): 随机获取一个整数，和range类似
+print(random.randrange(3, 5)) # 在 [3, 5) 之间取随机值
+print(random.randrange(2, 9, 2)) # 在2,4,6,8中取随机值
+
 # random.random() : 在0~1之间[0,1)随机获取一个小数
+print(random.random())
+print(random.random() * 9 + 1) # 得到[1, 10)之间的小数
 
 # random.uniform(3, 5) ： 3~5之间的小数 （了解）
-# random.shuffle(list) : 随机打乱顺序  （了解）
+print(random.uniform(3, 5)) # [3, 5)
+print(random.uniform(3, 3)) # [3, 3]
 
+'''
+ def uniform(self, a, b):
+        "Get a random number in the range [a, b) or [a, b] depending on rounding."
+        return a + (b - a) * self.random()
+'''
+
+# random.shuffle(list) : 随机打乱顺序  （了解）
+nums = [1, 3, 4, 5]
+random.shuffle(nums)
+print(nums)
