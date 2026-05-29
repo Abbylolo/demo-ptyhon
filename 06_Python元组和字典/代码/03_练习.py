@@ -49,3 +49,9 @@ douyu = {
         "pgcnt": 6
     }
 }
+
+
+for rl in douyu['data']['rl']:
+    # print(rl['nn'])
+    # print(rl['rs1'])
+    print(f'名字: {rl["nn"]}, 头像: {rl["rs1"]}')
